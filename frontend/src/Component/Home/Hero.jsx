@@ -136,7 +136,7 @@ const Hero = () => {
       </div>
 
       {/* Marketing Stats */}
-      <motion.div className="absolute bottom-10 left-0 right-0 hidden md:flex justify-center space-x-12" initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.2 }}>
+      <motion.div className="absolute bottom-10 mt-10 left-0 right-0 hidden md:flex justify-center space-x-12" initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.2 }}>
         <div className="text-center">
           <div className="text-3xl font-bold text-yellow-500">500+</div>
           <div className="text-gray-300 tracking-widest text-sm mt-1">SUCCESSFUL CAMPAIGNS</div>

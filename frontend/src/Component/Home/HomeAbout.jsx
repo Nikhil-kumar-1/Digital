@@ -16,13 +16,16 @@ const HomeAbout = () => {
             Who We Are
           </h2>
           <p className="text-gray-700 mb-6 text-lg leading-relaxed">
-            We are <span className="text-yellow-500 font-semibold">Adonomics</span>, a
-            dedicated digital marketing team helping brands grow online. From SEO and social media campaigns
-            to content marketing and web design, we craft strategies that deliver measurable results.
+            We are{" "}
+            <span className="text-yellow-500 font-semibold">Nik Tech</span>, a
+            dedicated digital marketing team helping brands grow online. From
+            SEO and social media campaigns to content marketing and web design,
+            we craft strategies that deliver measurable results.
           </p>
           <p className="text-gray-700 mb-6 text-lg leading-relaxed">
-            With a team of creative professionals, we combine data-driven strategies with innovative solutions to
-            maximize your brand’s online presence and engagement.
+            With a team of creative professionals, we combine data-driven
+            strategies with innovative solutions to maximize your brand’s online
+            presence and engagement.
           </p>
           <a
             href="#contact"

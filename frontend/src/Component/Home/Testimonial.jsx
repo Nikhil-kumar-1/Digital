@@ -6,7 +6,7 @@ const testimonials = [
     name: "Rohit Sharma",
     role: "Startup Founder",
     feedback:
-      "Adonomics helped us scale our online presence. Our leads grew by 3x within months!",
+      "Nik Tech helped us scale our online presence. Our leads grew by 3x within months!",
     image: "https://randomuser.me/api/portraits/men/32.jpg",
   },
   {

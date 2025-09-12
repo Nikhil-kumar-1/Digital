@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const HomeAbout = () => {
   return (
     <section className="bg-white py-20 px-4 sm:px-6 lg:px-20">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
+      <div className="overflow-hidden max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
         {/* Text */}
         <motion.div
           className="md:w-1/2"

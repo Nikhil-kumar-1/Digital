@@ -98,7 +98,7 @@ const Footer = () => {
           ))}
         </div>
 
-        {/* Newsletter Subscription */}
+        {/* Newsletter Subscription
         <motion.div
           className="bg-gray-50 rounded-xl p-8 mb-12"
           initial={{ opacity: 0, y: 20 }}
@@ -115,18 +115,18 @@ const Footer = () => {
                 Get updates on new collections and exclusive offers
               </p>
             </div>
-            <div className="flex w-full md:w-auto">
+            <div className="flex w-full  md:w-auto">
               <input
                 type="email"
                 placeholder="Your email address"
-                className="flex-grow px-4 py-3 rounded-l-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500/20 focus:border-yellow-500"
+                className="flex-grow w-30 px-2 py-2 rounded-l-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500/20 focus:border-yellow-500"
               />
-              <button className="bg-black text-white px-6 py-3 rounded-r-lg font-medium hover:bg-gray-800 transition-colors">
+              <button className="bg-black text-white px-2 py-3 rounded-r-lg font-medium hover:bg-gray-800 transition-colors">
                 Subscribe
               </button>
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* Bottom Bar */}
         <motion.div

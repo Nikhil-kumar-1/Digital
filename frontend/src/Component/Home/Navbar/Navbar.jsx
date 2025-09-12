@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiChevronDown, FiMenu, FiX } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,6 +40,14 @@ const Navbar = () => {
     {
       name: "Home",
       path: "/",
+    },
+    {
+      name: "Accountant",
+      path: "/accountant",
+    },
+    {
+      name:"Area Coordinator",
+      path:"/areacoordinator"
     },
     {
       name: "Services",
@@ -106,17 +115,15 @@ const Navbar = () => {
               onMouseEnter={() => setHoveredItem(idx)}
               onMouseLeave={() => setHoveredItem(null)}
             >
-              <motion.div
+              <Link 
+                to={item.path}
                 className={`cursor-pointer transition-colors duration-300 flex items-center ${
-                  scrolled
-                    ? "text-gray-800 hover:text-black"
-                    : "text-white hover:text-gray-200"
+                  scrolled ? "text-gray-800 hover:text-black" : "text-white hover:text-gray-200"
                 }`}
-                whileHover={{ y: -2 }}
               >
                 {item.name}
                 {item.dropdown && <FiChevronDown className="ml-1" />}
-              </motion.div>
+              </Link>
 
               {/* Dropdown */}
               {item.dropdown && (
@@ -182,55 +189,60 @@ const Navbar = () => {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden bg-white text-black shadow-xl absolute top-full left-0 right-0 overflow-hidden"
+            className="lg:hidden bg-white text-black shadow-xl absolute top-full left-0 right-0 w-full overflow-hidden"
+            style={{ boxSizing: 'border-box' }}
           >
-            <ul className="flex flex-col p-4">
+            <ul className="flex flex-col p-4 w-full">
               {navItems.map((item, idx) => (
-                <li key={idx} className="border-b border-gray-100 last:border-b-0">
-                  <div 
-                    className="flex items-center justify-between cursor-pointer py-4 px-2 hover:text-yellow-600 transition-colors duration-300 font-medium"
-                    onClick={() => item.dropdown ? toggleMobileDropdown(idx) : setIsOpen(false)}
-                  >
-                    <span>{item.name}</span>
-                    {item.dropdown && (
-                      <motion.div
-                        animate={{ rotate: mobileOpenItem === idx ? 180 : 0 }}
-                        transition={{ duration: 0.2 }}
+                <React.Fragment key={idx}>
+                  <li className="border-b border-gray-100 last:border-b-0 w-full">
+                    {item.dropdown ? (
+                      <div 
+                        className="flex items-center justify-between cursor-pointer py-4 px-2 hover:text-yellow-600 transition-colors duration-300 font-medium w-full"
+                        onClick={() => toggleMobileDropdown(idx)}
                       >
-                        <FiChevronDown />
-                      </motion.div>
-                    )}
-                  </div>
-                  
-                  {/* Mobile Dropdown */}
-                  {item.dropdown && (
-                    <AnimatePresence>
-                      {mobileOpenItem === idx && (
-                        <motion.ul
-                          initial={{ opacity: 0, height: 0 }}
-                          animate={{ opacity: 1, height: "auto" }}
-                          exit={{ opacity: 0, height: 0 }}
+                        <span>{item.name}</span>
+                        <motion.div
+                          animate={{ rotate: mobileOpenItem === idx ? 180 : 0 }}
                           transition={{ duration: 0.2 }}
-                          className="pl-6 overflow-hidden"
                         >
-                          {item.dropdown.map((dropdownItem, dIdx) => (
-                            <li
-                              key={dIdx}
-                              className="py-3 text-gray-600 hover:text-black transition-colors duration-300 border-b border-gray-100 last:border-b-0"
-                              onClick={() => setIsOpen(false)}
-                            >
-                              {dropdownItem}
-                            </li>
-                          ))}
-                        </motion.ul>
-                      )}
-                    </AnimatePresence>
+                          <FiChevronDown />
+                        </motion.div>
+                      </div>
+                    ) : (
+                      <Link 
+                        to={item.path} 
+                        className="block py-4 px-2 hover:text-yellow-600 transition-colors duration-300 font-medium w-full"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        {item.name}
+                      </Link>
+                    )}
+                  </li>
+                  
+                  {/* Mobile Dropdown Items */}
+                  {item.dropdown && mobileOpenItem === idx && (
+                    <motion.ul
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      exit={{ opacity: 0, height: 0 }}
+                      transition={{ duration: 0.2 }}
+                      className="pl-6 bg-gray-50 w-full overflow-hidden"
+                    >
+                      {item.dropdown.map((dropdownItem, dIdx) => (
+                        <li key={dIdx} className="border-b border-gray-100 last:border-b-0">
+                          <div className="block py-3 px-2 text-gray-700 hover:text-yellow-600 transition-colors duration-300">
+                            {dropdownItem}
+                          </div>
+                        </li>
+                      ))}
+                    </motion.ul>
                   )}
-                </li>
+                </React.Fragment>
               ))}
               
               {/* CTA Button - Mobile */}
-              <li className="mt-4 pt-4 border-t border-gray-200">
+              <li className="mt-4 pt-4 border-t border-gray-200 w-full">
                 <button 
                   className="w-full bg-black text-white py-3 rounded-sm font-medium"
                   onClick={() => setIsOpen(false)}

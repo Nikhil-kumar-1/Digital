@@ -14,253 +14,230 @@ export default function SubjectKnowledge() {
   };
 
   const accountingTopics = [
-    {
-      title: "1. Meaning and Scope of Accounting",
-      content: "Accounting is the process of identifying, measuring, recording, and communicating financial information about an entity to permit informed judgments and decisions by users of the information.",
-      subsections: [
-        {
-          title: "Meaning of Accounting",
-          content: "Accounting is often called the 'language of business' because it communicates financial information about a business entity to various stakeholders. It involves summarizing, analyzing, and reporting financial transactions to oversight agencies, regulators, and tax collection entities."
-        },
-        {
-          title: "Scope of Accounting",
-          content: "The scope of accounting includes: financial accounting, cost accounting, management accounting, tax accounting, auditing, accounting systems, and forensic accounting. It covers all financial activities of an organization from recording to interpretation."
-        }
-      ]
-    },
-    {
-      title: "2. Accounting Concepts, Principles, Conventions and Policies",
-      content: "These are the fundamental assumptions, rules, and guidelines that prepare financial statements consistently and meaningfully.",
-      subsections: [
-        {
-          title: "Accounting Concepts",
-          content: "Basic assumptions: Entity Concept, Money Measurement Concept, Going Concern Concept, Accounting Period Concept."
-        },
-        {
-          title: "Accounting Principles",
-          content: "How to apply concepts: Historical Cost, Revenue Recognition, Matching, Full Disclosure."
-        },
-        {
-          title: "Accounting Conventions",
-          content: "Customs and traditions: Consistency, Conservatism, Materiality, Full Disclosure."
-        },
-        {
-          title: "Accounting Policies",
-          content: "Specific principles and methods selected by a company to prepare and present financial statements."
-        }
-      ]
-    },
-    {
-      title: "3. Capital and Revenue Expenditures & Receipts",
-      content: "Understanding the distinction between capital and revenue items is crucial for proper accounting treatment.",
-      subsections: [
-        {
-          title: "Capital Expenditure",
-          content: "Expenditure that results in acquisition of permanent assets or improvement in their earning capacity. Benefits extend beyond one accounting period."
-        },
-        {
-          title: "Revenue Expenditure",
-          content: "Expenditure whose benefit is exhausted within the current accounting year. It is incurred for day-to-day operations."
-        },
-        {
-          title: "Capital Receipts",
-          content: "Receipts that create liabilities or reduce assets, such as loans, issue of shares, or sale of fixed assets."
-        },
-        {
-          title: "Revenue Receipts",
-          content: "Receipts that do not create liabilities or reduce assets, such as sales revenue, interest received, or commission earned."
-        }
-      ]
-    },
-    {
-      title: "4. Accounting Process",
-      content: "The sequence of accounting procedures used to record, classify, and summarize accounting information.",
-      subsections: [
-        {
-          title: "Journal Entries",
-          content: "The first step where transactions are recorded chronologically with debits and credits."
-        },
-        {
-          title: "Ledger",
-          content: "A collection of accounts that shows changes made to each account as a result of past transactions."
-        },
-        {
-          title: "Trial Balance",
-          content: "A statement of all debits and credits in double-entry account books to verify mathematical accuracy."
-        },
-        {
-          title: "Subsidiary Books",
-          content: "Books of original entry where transactions of similar nature are recorded (e.g., Sales Book, Purchase Book)."
-        },
-        {
-          title: "Cash Book",
-          content: "A financial journal that contains all cash receipts and payments, including bank deposits and withdrawals."
-        },
-        {
-          title: "Bank Reconciliation Statement",
-          content: "A statement that reconciles the balance in the company's records with the bank statement balance."
-        },
-        {
-          title: "Rectification of Errors",
-          content: "The process of identifying and correcting mistakes in accounting records."
-        }
-      ]
-    },
-    {
-      title: "5. Inventories",
-      content: "Assets held for sale in the ordinary course of business, in the process of production, or in the form of materials to be consumed in production.",
-      subsections: [
-        {
-          title: "Inventory Valuation Methods",
-          content: "FIFO (First-In, First-Out), LIFO (Last-In, First-Out), Weighted Average Cost, and Specific Identification."
-        },
-        {
-          title: "Inventory Management",
-          content: "Techniques for maintaining optimal inventory levels to meet customer demand while minimizing holding costs."
-        }
-      ]
-    },
-    {
-      title: "6. Depreciation and Amortization of Fixed Assets",
-      content: "Systematic allocation of the cost of tangible and intangible assets over their useful lives.",
-      subsections: [
-        {
-          title: "Depreciation Methods",
-          content: "Straight-line method, Reducing balance method, Units of production method, Sum-of-the-years'-digits method."
-        },
-        {
-          title: "Amortization",
-          content: "The process of allocating the cost of intangible assets over their useful lives."
-        }
-      ]
-    },
-    {
-      title: "7. Preparation of Financial Statements",
-      content: "The process of creating formal records of financial activities and position of a business.",
-      subsections: [
-        {
-          title: "Non-profit Organizations",
-          content: "Preparation of Receipt and Payment Account, Income and Expenditure Account, and Balance Sheet."
-        },
-        {
-          title: "Profit-making Organizations",
-          content: "Preparation of Trading Account, Profit and Loss Account, and Balance Sheet."
-        }
-      ]
-    },
-    {
-      title: "8. Accounts from Incomplete Records",
-      content: "Preparation of financial statements when proper accounting records are not maintained.",
-      subsections: [
-        {
-          title: "Single Entry System",
-          content: "An incomplete recording system where some transactions are recorded with both aspects, some with one aspect, and some not recorded at all."
-        }
-      ]
-    },
-    {
-      title: "9. Accounting of Producer Companies",
-      content: "Special accounting practices for producer companies as defined under the Companies Act.",
-      subsections: [
-        {
-          title: "Features of Producer Companies",
-          content: "Voluntary association of producers, registered under Companies Act, object is production, harvesting, procurement, etc."
-        },
-        {
-          title: "Financial Statements",
-          content: "Preparation of financial statements following the format prescribed for producer companies."
-        }
-      ]
-    },
-    {
-      title: "10. Auditing",
-      content: "The systematic examination of books, accounts, documents, and vouchers of an organization.",
-      subsections: [
-        {
-          title: "Introduction to Auditing",
-          content: "Meaning: Independent examination of financial information. Objectives: True and fair view, detection of errors and frauds."
-        },
-        {
-          title: "Types of Audits",
-          content: "Internal Audit: By employees. Statutory Audit: Required by law. AG Audit: Audit by Auditor General."
-        },
-        {
-          title: "Audit Process",
-          content: "Audit Programme, Audit Notebook, Working Papers, Evidence, Preparation before commencing Audit."
-        },
-        {
-          title: "Internal Check System",
-          content: "Routine Checking, Internal Check and Test Checking."
-        },
-        {
-          title: "Internal Control",
-          content: "Policies and procedures to ensure reliability of financial reporting, compliance with laws, and effective operations."
-        },
-        {
-          title: "Company Audit",
-          content: "Special considerations when auditing companies registered under Companies Act."
-        },
-        {
-          title: "Vouching",
-          content: "The process of examining documentary evidence to verify transactions."
-        },
-        {
-          title: "Verification of Assets and Liabilities",
-          content: "Confirming existence, ownership, valuation, and disclosure of assets and liabilities."
-        }
-      ]
-    },
-    {
-      title: "11. Labour Law and Economic Law",
-      content: "Legal framework governing employment and economic activities.",
-      subsections: [
-        {
-          title: "Previous Year and Assessment Year",
-          content: "Previous Year: Financial year in which income is earned. Assessment Year: Year following previous year in which income is assessed."
-        },
-        {
-          title: "Basis of Charge and Rates of Tax",
-          content: "Income is taxed based on residential status. Different tax rates for individuals, companies, etc."
-        },
-        {
-          title: "Residential Status",
-          content: "Determines scope of taxable income: Resident, Resident but Not Ordinarily Resident, Non-Resident."
-        },
-        {
-          title: "Heads of Income",
-          content: "Salaries, House Property, Business/Profession, Capital Gains, Other Sources."
-        },
-        {
-          title: "Assessment of Different Persons",
-          content: "Association of Persons, Co-operative Societies, Trusts, Charitable and Religious Institutions."
-        },
-        {
-          title: "Assessment Procedure",
-          content: "Types of returns, Due dates, E-filing, Different forms, Demand and Recovery."
-        },
-        {
-          title: "TDS and TCS",
-          content: "Tax Deducted at Source, Tax Collected at Source, Advance payment of Tax."
-        },
-        {
-          title: "Penalty and Prosecution",
-          content: "Provisions for imposition of penalty, fines, and prosecution for non-compliance."
-        },
-        {
-          title: "Goods and Service Tax (GST)",
-          content: "Introduction, Background, Models, Registration, Returns, Rate of Tax, Computation, Filing of returns."
-        },
-        {
-          title: "EPF Act and Gratuity Act",
-          content: "Provisions under Employee Provident Fund Act and Payment of Gratuity Act."
-        },
-        {
-          title: "Statutory Compliances",
-          content: "Secretarial Practices related to Producer Companies and other statutory requirements."
-        }
-      ]
-    }
-  ];
+  {
+    "title": "1. Meaning and Scope of Accounting",
+    "content": "Accounting is the art of recording, classifying, summarizing, analyzing, and interpreting financial transactions and events, which are primarily financial in nature, and communicating the results to interested users.",
+    "subsections": [
+      {
+        "title": "Meaning of Accounting",
+        "content": "Accounting is the art of recording, classifying, summarizing, analyzing, and interpreting financial transactions and events, which are primarily financial in nature, and communicating the results to interested users."
+      },
+      {
+        "title": "Scope of Accounting",
+        "content": "The scope of accounting is vast and includes: Bookkeeping, Financial Accounting, Cost Accounting, Management Accounting, Tax Accounting, and Auditing."
+      }
+    ]
+  },
+  {
+    "title": "2. Accounting Concepts, Principles, Conventions, and Policies",
+    "content": "These are the fundamental assumptions, rules, customs, and specific methods that guide how financial information is recorded and presented.",
+    "subsections": [
+      {
+        "title": "Accounting Concepts",
+        "content": "The fundamental assumptions: Business Entity Concept, Money Measurement Concept, Going Concern Concept, Accounting Period Concept."
+      },
+      {
+        "title": "Accounting Principles",
+        "content": "The rules of action: Full Disclosure Principle, Matching Principle, Revenue Recognition Principle, Objectivity Principle."
+      },
+      {
+        "title": "Accounting Conventions",
+        "content": "The customs or traditions: Consistency, Conservatism (Prudence), Materiality."
+      },
+      {
+        "title": "Accounting Policies",
+        "content": "The specific principles, bases, conventions, rules, and practices applied by a company in preparing and presenting its financial statements (e.g., method of depreciation chosen)."
+      }
+    ]
+  },
+  {
+    "title": "3. Capital and Revenue Expenditures & Receipts",
+    "content": "Understanding the distinction between capital and revenue items is crucial for correct accounting treatment in the Balance Sheet and Profit & Loss Account.",
+    "subsections": [
+      {
+        "title": "Capital Expenditure",
+        "content": "Expenditure that gives benefit for more than one accounting year. It results in the acquisition of a fixed asset or improves the earning capacity of an existing asset. Treated as an asset on the Balance Sheet."
+      },
+      {
+        "title": "Revenue Expenditure",
+        "content": "Expenditure whose benefit is exhausted within a year. It is incurred for day-to-day operations. Charged to the Profit & Loss Account."
+      },
+      {
+        "title": "Capital Receipt",
+        "content": "Receipts not from the core business operations, often from the sale of fixed assets or raising capital. Shown as a liability or reduction of an asset on the Balance Sheet."
+      },
+      {
+        "title": "Revenue Receipt",
+        "content": "Receipts arising from the core business activities or other recurring sources. Credited to the Profit & Loss Account."
+      }
+    ]
+  },
+  {
+    "title": "4. Accounting Process",
+    "content": "This is the cycle of recording a transaction to the preparation of final accounts.",
+    "subsections": [
+      {
+        "title": "Journal Entries",
+        "content": "The primary book of record where transactions are recorded chronologically using the double-entry system (Debit and Credit)."
+      },
+      {
+        "title": "Ledger",
+        "content": "A book containing all accounts where journal entries are posted and balanced."
+      },
+      {
+        "title": "Trial Balance",
+        "content": "A statement listing all ledger account balances to check the arithmetical accuracy of the books (Total Debits = Total Credits)."
+      },
+      {
+        "title": "Subsidiary Books",
+        "content": "Books of original entry for specific types of high-volume transactions: Purchase Book, Sales Book, Purchase Returns Book, Sales Returns Book, Bills Receivable Book, Bills Payable Book, Cash Book, Journal Proper."
+      },
+      {
+        "title": "Cash Book",
+        "content": "A book that records all cash and bank transactions. It serves as both a journal and a ledger for cash and bank accounts. Types: Simple, Double Column, Three Column, Petty Cash Book."
+      },
+      {
+        "title": "Bank Reconciliation Statement (BRS)",
+        "content": "A statement prepared to reconcile the difference between the bank balance as per the Cash Book and the bank balance as per the Pass Book/Bank Statement."
+      },
+      {
+        "title": "Rectification of Errors",
+        "content": "The process of correcting accounting errors, either through journal entries or via a Suspense Account."
+      }
+    ]
+  },
+  {
+    "title": "5. Inventories",
+    "content": "Goods held for sale in the ordinary course of business or used in the production process.",
+    "subsections": [
+      {
+        "title": "Valuation of Inventories",
+        "content": "Inventories are valued at Lower of Cost or Net Realizable Value."
+      },
+      {
+        "title": "Cost Formulas",
+        "content": "Methods to ascertain cost: FIFO (First-In, First-Out), Weighted Average Cost."
+      }
+    ]
+  },
+  {
+    "title": "6. Depreciation and Amortization",
+    "content": "The systematic allocation of the cost of tangible and intangible assets over their useful lives.",
+    "subsections": [
+      {
+        "title": "Depreciation",
+        "content": "Allocation of the cost of a tangible fixed asset (e.g., machinery). Causes: Wear and tear, obsolescence. Methods: Straight-Line Method, Written Down Value Method."
+      },
+      {
+        "title": "Amortization",
+        "content": "The process of systematically writing off the cost of an intangible asset (e.g., patents, goodwill) over its useful life."
+      }
+    ]
+  },
+  {
+    "title": "7. Preparation of Financial Statements / Final Accounts",
+    "content": "The process of creating formal reports that summarize the financial activities and position of a business.",
+    "subsections": [
+      {
+        "title": "For Profit-Making Organizations",
+        "content": "Preparation of Trading Account (Gross Profit), Profit & Loss Account (Net Profit), and Balance Sheet (Assets, Liabilities, Owner's Equity)."
+      },
+      {
+        "title": "For Non-Profit Making Organizations",
+        "content": "Preparation of Receipts and Payments A/c, Income and Expenditure A/c (Surplus/Deficit), and Balance Sheet with a Capital Fund."
+      }
+    ]
+  },
+  {
+    "title": "8. Accounts from Incomplete Records (Single Entry System)",
+    "content": "Preparing financial statements when a complete double-entry record is not maintained.",
+    "subsections": [
+      {
+        "title": "Process",
+        "content": "Involves preparing a Statement of Affairs to find capital and using the formula: Profit = Closing Capital - Opening Capital + Drawings - Additional Capital Introduced."
+      }
+    ]
+  },
+  {
+    "title": "9. Accounting of Producer Companies and Financial Statements",
+    "content": "Special accounting considerations for Producer Companies formed by primary producers.",
+    "subsections": [
+      {
+        "title": "Accounting Focus",
+        "content": "Focuses on transactions with members (e.g., procurement of produce, distribution of profits as patronage bonus)."
+      },
+      {
+        "title": "Financial Statements",
+        "content": "Must prepare standard financial statements (Balance Sheet, P&L, Cash Flow) following accounting standards, similar to other companies."
+      }
+    ]
+  },
+  {
+    "title": "10. Auditing",
+    "content": "The independent examination of financial information to express an opinion on its truth and fairness.",
+    "subsections": [
+      {
+        "title": "Introduction: Meaning and Objectives",
+        "content": "Meaning: Independent examination of financial information. Objectives: Primary is to express an opinion; Secondary includes detection and prevention of errors and fraud."
+      },
+      {
+        "title": "Types of Audits",
+        "content": "Internal Audit, Statutory Audit, AG Audit (Auditor General of India / C&AG Audit)."
+      },
+      {
+        "title": "Audit Process",
+        "content": "Involves an Audit Programme, maintaining an Audit Notebook, preparing Working Papers & gathering Evidence, and Preparation before Commencing Audit."
+      },
+      {
+        "title": "Internal Check, Internal Control, and Audit Procedures",
+        "content": "Internal Check (arrangement of duties), Internal Control (broad system of controls), Routine Checking, Test Checking, and specific Audit Procedures."
+      },
+      {
+        "title": "Company Audit, Vouching, and Verification",
+        "content": "Company Audit (as per Companies Act), Vouching (examining documentary evidence), Verification of Assets and Liabilities (confirming existence, ownership, valuation)."
+      }
+    ]
+  },
+  {
+    "title": "11. Labour Law and Economic Law (Focus: Income Tax & GST)",
+    "content": "Legal framework governing employment, taxation, and economic activities.",
+    "subsections": [
+      {
+        "title": "Concept of Previous Year (PY) and Assessment Year (AY)",
+        "content": "PY: The year in which income is earned (April 1 - March 31). AY: The year following PY in which income is assessed."
+      },
+      {
+        "title": "Basis of Charge and Residential Status",
+        "content": "Tax is charged on total income. Residential Status (ROR, RNOR, NR) determines the scope of taxable income in India."
+      },
+      {
+        "title": "Heads of Income",
+        "content": "Five heads: Salaries, Income from House Property, Profits and Gains of Business or Profession, Capital Gains, Income from Other Sources."
+      },
+      {
+        "title": "Assessment of Different Persons & Assessment Procedure",
+        "content": "Assessment of AOPs, Co-op Societies, Trusts. Procedure includes filing Returns (ITR forms, Due Dates, E-filing), and dealing with Demand and Recovery."
+      },
+      {
+        "title": "TDS, TCS, Advance Tax, PAN & TAN",
+        "content": "TDS (Tax Deducted at Source), TCS (Tax Collected at Source), Advance Tax, PAN (Permanent Account Number), TAN (Tax Deduction Account Number)."
+      },
+      {
+        "title": "Goods and Service Tax (GST)",
+        "content": "A comprehensive, multi-stage, destination-based tax. Includes Registration, Return Filing (GSTR-1, GSTR-3B, GSTR-9), Computation (Output GST - Input GST Credit), and TDS under GST."
+      },
+      {
+        "title": "Provisions under EPF Act and Gratuity Act",
+        "content": "EPF Act: Compulsory contributory fund for employees. Gratuity Act: Provides for a lump sum payment to employees upon termination after 5 years."
+      },
+      {
+        "title": "Statutory Compliances for Producer Companies",
+        "content": "Must comply with the Companies Act, 2013 (AGM, filing returns), Income Tax Act, GST Law, Labour Laws, and Secretarial Practices."
+      }
+    ]
+  }
+]
+    
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-gray-100 p-4 md:p-8">

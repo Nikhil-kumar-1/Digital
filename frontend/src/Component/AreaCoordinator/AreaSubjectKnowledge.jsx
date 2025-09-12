@@ -20,7 +20,151 @@ export default function AreaSubjectKnowledge() {
       subsections: [
         {
           title: "Concept and Definition of Rural Development",
-          content: "Rural development is a process aimed at improving the quality of life and economic well-being of people living in rural areas. It involves concerted efforts to address various challenges faced by rural communities, including poverty, unemployment, lack of infrastructure, and limited access to services. The ultimate goal is to achieve balanced regional development and reduce rural-urban disparities."
+          content: `Rural Development kya hai?
+Rural Development ka matlab hota hai gaon ke logon ki living standard ko improve karna.
+
+👉 Iska main focus hota hai:
+
+Employment (job opportunities dena)
+
+Good education provide karna
+
+Health aur medical facilities dena
+
+Infrastructure develop karna (roads, electricity, water supply)
+
+Kyun zaroori hai?
+
+Kyunki India ki economy tabhi grow karegi jab gaon develop honge.
+
+2011 ke census ke hisaab se, India ki 68% population gaon me rehti hai.
+
+Agar rural areas backward rahenge to country ki economy kabhi develop nahi hogi.
+
+🟢 Panchayati Raj aur Rural Development
+
+Rural development ke liye government ne Panchayati Raj system introduce kiya.
+
+👉 Ye ek three-tier structure of Indian Administration hai jo mainly rural areas ke liye banaya gaya hai.
+
+Panchayati Raj ke Levels
+
+Gram Panchayat (Village level) – directly election hota hai
+
+Panchayat Samiti (Block/Taluk level) – executive body
+
+Zila Parishad (District level) – supervise aur advice deta hai
+
+👉 Panchayati Raj ka main kaam hai:
+
+Education, agriculture, health aur employment ko promote karna
+
+Local level pe logon ke issues solve karna
+
+Development schemes ko ground level pe implement karna
+
+🟢 Panchayati Raj ki Origin
+
+Balwant Rai Mehta ko Father of Panchayati Raj kaha jata hai.
+
+1957 me unhone ek Committee banayi thi jisme Panchayati Raj ka idea diya.
+
+Uske baad different committees bani jinhone is system ko aur strong banane ke suggestions diye.
+
+🟢 Committees on Panchayati Raj
+1. Balwant Rai Mehta Committee (1957)
+
+Ye pehli committee thi jisne Panchayati Raj suggest kiya.
+
+Isne kaha ki ek 3-tier system hona chahiye:
+
+Gram Panchayat – directly elected body
+
+Panchayat Samiti – executive body
+
+Zila Parishad – supervise aur advice ka kaam kare
+
+Zila Parishad ka chairman hota tha District Collector.
+
+Main aim tha: rural development ko monitor karna.
+
+2. Ashok Mehta Committee (1977)
+
+1970s ke time Panchayati Raj weak ho gaya tha, isliye is committee ko banaya gaya.
+
+Isne bola ki sirf 2 bodies ho:
+
+Zila Parishad
+
+Mandal Panchayat (jo kuch villages ko combine karke banta hai)
+
+Zila Parishad ko executive body banaya gaya jiske paas decision power ho.
+
+Governing bodies ko taxation ka power diya gaya.
+
+3. GVK Rao Committee (1985)
+
+Is committee ka main aim tha Panchayati Raj ko strengthen karna.
+
+Zila Parishad ko sabse powerful body banaya gaya.
+
+Regular elections ko compulsory banaya gaya.
+
+Important decisions sirf Zila Parishad ke through lene ki baat ki gayi.
+
+Ek naya post introduce kiya gaya: CEO of Zila Parishad.
+
+4. LM Singhvi Committee (1986)
+
+Government of India ne ye committee appoint ki.
+
+Suggestions diye:
+
+Har state me Judicial Tribunals ho election disputes solve karne ke liye.
+
+Panchayati Raj ko Constitutional recognition milna chahiye.
+
+🟢 Objectives of Rural Development Department
+
+Infrastructure develop karna – roads, electricity, water supply
+
+Poverty reduce karna – logon ki income badhakar
+
+Employment create karna – naye jobs aur wages increase karna
+
+Health facilities provide karna
+
+Quality education dena
+
+Agriculture development – seeds, fertilizers, irrigation ke liye help
+
+Small scale irrigation schemes develop karna
+
+Electricity supply in rural areas
+
+Female literacy improve karna – girls ko padhai ke liye encourage karna
+
+🟢 Importance of Rural Development
+
+Overall development – Country ka growth tabhi hoga jab gaon develop honge.
+
+Basic needs fulfill karna – food, clothes, medicines provide karna rural population ko.
+
+Agriculture sector support karna – India ek agricultural country hai aur 75% population agriculture pe dependent hai.
+
+Economic growth – Agar rural logon ki income badhegi to overall economy bhi grow karegi.
+
+🟢 Conclusion
+
+Rural Development ek country ke progress ke liye bahut important hai.
+
+Iske liye Panchayati Raj system banaya gaya jo 3-level structure hai (Gram Panchayat, Panchayat Samiti, Zila Parishad).
+
+Committees (Balwant Rai Mehta, Ashok Mehta, GVK Rao, LM Singhvi) ne isko strong banane ke liye alag-alag suggestions diye.
+
+Rural Development ke objectives clear hain – jobs, education, health, agriculture, infrastructure, poverty reduction.
+
+Agar gaon develop hoga to poore India ki economy strong hogi.`
         },
         {
           title: "Historical Background of Rural Development Initiatives",
